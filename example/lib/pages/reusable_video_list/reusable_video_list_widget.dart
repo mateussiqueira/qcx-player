@@ -89,8 +89,6 @@ class _ReusableVideoListWidgetState extends State<ReusableVideoListWidget> {
     }
   }
 
-  ///TODO: Handle "setState() or markNeedsBuild() called during build." error
-  ///when fast scrolling through the list
   @override
   Widget build(BuildContext context) {
     return Card(

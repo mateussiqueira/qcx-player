@@ -3,8 +3,8 @@ version '0.0.77'
 
 buildscript {
 
-    ext.exoPlayerVersion = "2.15.1"
-    ext.lifecycleVersion = "2.4.0-beta01"
+    ext.exoPlayerVersion = "2.17.1"
+    ext.lifecycleVersion = "2.5.0-alpha04"
     ext.annotationVersion = "1.2.0"
     ext.workVersion = "2.7.0"
     ext.coreVersion = "1.6.0"
@@ -29,7 +29,6 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
