@@ -4,16 +4,15 @@ import 'package:flutter/material.dart';
 
 class BetterPlayerUtils {
   static String formatBitrate(int bitrate) {
-    // if (bitrate < 1000) {
-    //   return "$bitrate bit/s";
-    // }
-    // if (bitrate < 1000000) {
-    //   final kbit = (bitrate / 1000).floor();
-    //   return "~$kbit KBit/s";
-    // }
-    // final mbit = (bitrate / 1000000).floor();
-    // return "~$mbit MBit/s";
-    return '';
+    if (bitrate < 1000) {
+      return "$bitrate bit/s";
+    }
+    if (bitrate < 1000000) {
+      final kbit = (bitrate / 1000).floor();
+      return "~$kbit KBit/s";
+    }
+    final mbit = (bitrate / 1000000).floor();
+    return "~$mbit MBit/s";
   }
 
   static String formatDuration(Duration position) {
