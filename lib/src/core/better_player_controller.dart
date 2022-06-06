@@ -1188,6 +1188,9 @@ class BetterPlayerController {
 
   ///Set [audioTrack] in player. Works only for HLS or DASH streams.
   void setAudioTrack(BetterPlayerAsmsAudioTrack audioTrack) {
+    if (_disposed) {
+      return;
+    }
     if (videoPlayerController == null) {
       throw StateError("The data source has not been initialized");
     }
